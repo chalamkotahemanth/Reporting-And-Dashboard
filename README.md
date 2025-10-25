@@ -107,6 +107,9 @@ Passed Test Cases
 <img width="1795" height="707" alt="image" src="https://github.com/user-attachments/assets/af3bd23e-faf2-45ae-98a6-b7123d946cb1" />
 
 
+![Uploading image.png…]()
+
+
 Testing was performed through Swagger UI and manual database verification to ensure accuracy of reports.
 
 📈 Expected Output
