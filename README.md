@@ -1,4 +1,4 @@
-SmartBank – Reporting and Dashboarding Module
+**SmartBank – Reporting and Dashboarding Module**
 📘 Project Overview
 This module is developed as part of the SmartBank Modular Banking Backend System.
 The use case focuses on Reporting and Dashboarding, which allows customers and banking administrators to view account summaries, transaction insights, and financial trends through APIs and optional dashboards.
