@@ -1,4 +1,4 @@
-# Reporting-And-Dashboard
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7e64a77a-0f49-47f7-b1a6-12384fbb552e" /># Reporting-And-Dashboard
 SmartBank – Reporting and Dashboarding Module
 📘 Project Overview
 This module is developed as part of the SmartBank Modular Banking Backend System.
@@ -103,6 +103,9 @@ Error Handling	✅ Returns clear messages for invalid customer IDs
 
 You can access the live application here:**
 https://reporting-and-dashboard.onrender.com/
+Passed Test Cases
+<img width="1795" height="707" alt="image" src="https://github.com/user-attachments/assets/af3bd23e-faf2-45ae-98a6-b7123d946cb1" />
+
 
 Testing was performed through Swagger UI and manual database verification to ensure accuracy of reports.
 
