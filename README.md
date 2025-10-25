@@ -104,7 +104,7 @@ Error Handling	✅ Returns clear messages for invalid customer IDs
 You can access the live application here:**
 https://reporting-and-dashboard.onrender.com/
 
-Passed Test Cases:http://127.0.0.1:8000/docs#/default/create_customer_customer_post
+Passed Test Cases:127.0.0.1:8000/docs
 
 
 Testing was performed through Swagger UI and manual database verification to ensure accuracy of reports.
