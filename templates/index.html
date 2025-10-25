@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Dashboard</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    input, select { margin: 5px; padding: 5px; }
+    button { padding: 5px 10px; cursor: pointer; }
+    hr { margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h2>Customer Dashboard Demo</h2>
+
+  <h3>Create Customer</h3>
+  <input id="custName" placeholder="Name">
+  <input id="custBalance" type="number" placeholder="Balance">
+  <button onclick="createCustomer()">Create</button>
+
+  <h3>Add Transaction</h3>
+  <input id="txCustId" type="number" placeholder="Customer ID">
+  <input id="txAmount" type="number" placeholder="Amount">
+  <select id="txType">
+    <option value="credit">Credit</option>
+    <option value="debit">Debit</option>
+  </select>
+  <button onclick="addTransaction()">Add Transaction</button>
+
+  <h3>Add Loan</h3>
+  <input id="loanCustId" type="number" placeholder="Customer ID">
+  <input id="loanAmount" type="number" placeholder="Amount">
+  <select id="loanStatus">
+    <option value="approved">Approved</option>
+    <option value="pending">Pending</option>
+    <option value="rejected">Rejected</option>
+  </select>
+  <button onclick="addLoan()">Add Loan</button>
+
+  <h3>Customer Dashboard</h3>
+  <input id="dashCustId" type="number" placeholder="Customer ID">
+  <button onclick="getDashboard()">Show Dashboard</button>
+
+  <pre id="dashboard"></pre>
+
+  <script>
+    async function createCustomer() {
+      const name = document.getElementById("custName").value;
+      const balance = parseFloat(document.getElementById("custBalance").value);
+      await fetch("/customer", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({name, balance})
+      });
+      alert("Customer created!");
+    }
+
+    async function addTransaction() {
+      const customer_id = parseInt(document.getElementById("txCustId").value);
+      const amount = parseFloat(document.getElementById("txAmount").value);
+      const type = document.getElementById("txType").value;
+      await fetch("/transaction", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({customer_id, amount, type})
+      });
+      alert("Transaction added!");
+    }
+
+    async function addLoan() {
+      const customer_id = parseInt(document.getElementById("loanCustId").value);
+      const amount = parseFloat(document.getElementById("loanAmount").value);
+      const status = document.getElementById("loanStatus").value;
+      await fetch("/loan", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({customer_id, amount, status})
+      });
+      alert("Loan added!");
+    }
+
+    async function getDashboard() {
+      const customer_id = parseInt(document.getElementById("dashCustId").value);
+      const res = await fetch(`/customer/${customer_id}`);
+      const data = await res.json();
+      document.getElementById("dashboard").textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
 
