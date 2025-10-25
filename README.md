@@ -1,4 +1,3 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7e64a77a-0f49-47f7-b1a6-12384fbb552e" /># Reporting-And-Dashboard
 SmartBank – Reporting and Dashboarding Module
 📘 Project Overview
 This module is developed as part of the SmartBank Modular Banking Backend System.
