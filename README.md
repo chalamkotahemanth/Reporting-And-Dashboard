@@ -98,6 +98,12 @@ Data Aggregation	✅ Correct totals and monthly grouping verified
 Dashboard Functionality	✅ Successfully fetches and displays API data
 Error Handling	✅ Returns clear messages for invalid customer IDs
 
+**This project is deployed on Render.com
+ using serverless deployment. Render automatically scales the application based on demand, so no server management is required.
+
+You can access the live application here:**
+https://reporting-and-dashboard.onrender.com/
+
 Testing was performed through Swagger UI and manual database verification to ensure accuracy of reports.
 
 📈 Expected Output
