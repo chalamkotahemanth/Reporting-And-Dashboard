@@ -29,7 +29,7 @@ Built an optional dashboard using Streamlit for visualization.
 **Documented the workflow and outcomes.**
 
 ⚙️ **Technologies Used**
-Layer	Technology
+Layer Technology
 Backend Framework	FastAPI
 ORM & Database Layer	SQLAlchemy with SQLite / MySQL
 API Documentation	Swagger UI
@@ -45,6 +45,7 @@ Frontend (Streamlit or React)
 Backend (FastAPI REST APIs)
          ↓
 Database (SQLite / MySQL)
+
 **Folder Structure
 **
 
@@ -67,19 +68,8 @@ Database (SQLite / MySQL)
 **Flow Explanation:**
 
 Customer/Admin requests a report via API or dashboard.
-
 Backend aggregates data from accounts and transactions tables.
-
 Processed summary is returned in JSON format or visualized in the dashboard.
-
-📂 **Module Responsibilities**
-
-**Component	Responsibility**
-
-Account Summary API	Provides customer balance and transaction count
-Transaction Trends API	Shows month-wise or week-wise transaction totals
-Dashboard	Visualizes trends and reports for users
-Data Layer	Maintains clean ORM mapping for scalability
 
 
 📊** Data & Reporting Features**
@@ -172,8 +162,6 @@ A simple, REST-based reporting architecture.
 Visualization-ready data for dashboards.
 Modular code design for integration with the core banking backend.
 
-**This implementation aligns with the hackathon’s goal of creating scalable backend solutions that can evolve into enterprise-level systems.
-**
 **🧍‍♂️ Candidate Details
 **
 Name: Hemanth C
