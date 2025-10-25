@@ -103,11 +103,8 @@ Error Handling	✅ Returns clear messages for invalid customer IDs
 
 You can access the live application here:**
 https://reporting-and-dashboard.onrender.com/
-Passed Test Cases
-<img width="1795" height="707" alt="image" src="https://github.com/user-attachments/assets/af3bd23e-faf2-45ae-98a6-b7123d946cb1" />
 
-
-![Uploading image.png…]()
+Passed Test Cases:http://127.0.0.1:8000/docs#/default/create_customer_customer_post
 
 
 Testing was performed through Swagger UI and manual database verification to ensure accuracy of reports.
